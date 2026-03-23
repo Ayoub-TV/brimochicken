@@ -498,7 +498,7 @@
       align-items: baseline;
       gap: 10px;
       flex-wrap: wrap;
-      margin-bottom: 6px;
+      margin-bottom: 18px;
       margin-top: 28px;
     }
 
@@ -528,7 +528,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 14px;
-      margin-top: 16px;
+      margin-top: 0;
     }
 
     @media (max-width: 900px) {
@@ -561,36 +561,56 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      gap: 0;
     }
 
     .menu-card--family-box {
       justify-content: flex-start;
-      padding: 16px 72px 20px 16px;
+      padding: 18px 72px 18px 16px;
       min-height: auto;
+    }
+
+    .menu-card--family-box .menu-card__desc {
+      margin-bottom: 0;
+      padding-top: 12px;
+      padding-bottom: 12px;
     }
 
     .menu-card__name {
       font-size: 0.95rem;
-      font-weight: 500;
+      font-weight: 700;
       color: var(--text);
       text-transform: lowercase;
       line-height: 1.35;
       padding-right: 4px;
+      margin-bottom: 8px;
+      letter-spacing: 0.01em;
     }
 
     .menu-card__desc {
       font-size: 0.72rem;
-      margin-top: 0%;  /* Plus serré */
-      color: var(--text-muted);
-      line-height: 1.45;
+      margin-top: 0;
+      color: #515151;
+      line-height: 1.55;
+      margin-bottom: 10px;
+      background: #f7f3ef;
+      border-left: 4px solid rgba(233, 118, 34, 0.45);
+      border-radius: 10px;
+      padding: 10px 12px;
     }
 
     .menu-card__option {
       font-size: 0.72rem;
-      color: var(--accent-dark);
-      margin-top: 6px;
-      font-weight: 500;
+      color: #9a4b10;
+      margin-top: 0;
+      font-weight: 700;
       line-height: 1.45;
+      background: rgba(233, 118, 34, 0.12);
+      border: 1px dashed rgba(233, 118, 34, 0.45);
+      border-radius: 999px;
+      padding: 8px 12px;
+      display: inline-flex;
+      align-self: flex-start;
     }
 
     .menu-card__option + .menu-card__option {
@@ -751,7 +771,7 @@
 
   <script>
     const categoryImages = {
-      burgers: "burgeres.jpg",   // burger/poulet
+      burgers: "Burgeres.jpg",   // burger/poulet
       poulet: "assets/ed83cb67-9870-4c5a-b438-736ded10cdc7.png",   // sandwichs poulet
       familial: "assets/istockphoto-177005490-612x612.jpg",      // menus familiaux
       bowls: "assets/bol et macaroni au fromage.jpg",                                  // bols + macaroni (meilleur disponible)
@@ -946,12 +966,12 @@
           {
             name: "Family Box",
             price: "185 DH",
-            desc: "<br>• 5 tenders croustillants<br>• 5 franksticks savoureux<br>• 5 ailes de poulet dorées<br>• 2 portions de frites dorées à souhait<br>• 1 boisson rafraîchissante d'un litre<br>• 2 sauces gourmandes de 30 ml",
+            desc: "• 5 tenders croustillants<br>• 5 franksticks savoureux<br>• 5 ailes de poulet dorées<br>• 2 portions de frites dorées à souhait<br>• 1 boisson rafraîchissante d'un litre<br>• 2 sauces gourmandes de 30 ml",
           },
           {
             name: "Family Box",
             price: "245 DH",
-            desc: "<br>• 7 tenders croustillants<br>• 7 franksticks savoureux<br>• 7 ailes de poulet dorées<br>• 3 portions de frites dorées à souhait<br>• 2 boisson rafraîchissante d'un litre<br>• 2 sauces gourmandes de 30 ml",
+            desc: "• 7 tenders croustillants<br>• 7 franksticks savoureux<br>• 7 ailes de poulet dorées<br>• 3 portions de frites dorées à souhait<br>• 2 boisson rafraîchissante d'un litre<br>• 2 sauces gourmandes de 30 ml",
           }
         ],
       },
