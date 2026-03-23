@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BRIMO CHICKEN</title>
+  <title>BRIMO CHECKEN</title>
   <meta
     name="description"
     content="BRIMO CHECKEN, commandez vos burgers, tacos, wraps, menus familiaux et poulet frit a Casablanca."
@@ -693,7 +693,7 @@
     <header class="site-header">
       <div class="brand">
         <div class="brand__mark">brimo</div>
-        <span class="brand__name">BRIMO CHICKEN</span>
+        <span class="brand__name">BRIMO CHECKEN</span>
       </div>
       <div class="header-cta">
         <div class="header-cta__row">
@@ -726,7 +726,7 @@
           </button>
           <div class="brand">
             <div class="brand__mark">brimo</div>
-            <span class="brand__name">BRIMO CHICKEN</span>
+            <span class="brand__name">BRIMO CHECKEN</span>
           </div>
         </div>
         <div class="header-cta">
@@ -751,14 +751,16 @@
 
   <script>
     const categoryImages = {
-      burgers: "burgeres.jpg",   // burger/poulet
+      burgers: "Burgeres.jpg",   // burger/poulet
       poulet: "assets/ed83cb67-9870-4c5a-b438-736ded10cdc7.png",   // sandwichs poulet
       familial: "assets/istockphoto-177005490-612x612.jpg",      // menus familiaux
       bowls: "assets/bol et macaroni au fromage.jpg",                                  // bols + macaroni (meilleur disponible)
+      salades: "assets/eiliv-aceron-mW0LIBBHNdE-unsplash.jpg",                                // salades
       poutines: "assets/poutines.jpg",                               // poutines, même style fast-food
       tacos: "assets/tacos.png",                                  // tacos
       wraps: "assets/wraps.png",                                  // wraps
       kfc: "assets/poulet frit coreen .jpg",      // poulet frit coréen
+      kentucky: "assets/053-Photo_535x.jpg",      // kentucky style
       fingers: "assets/bouchees a grignoter.jpg",        // bouchées à grignoter
     };  
     // Vérifie qu’aucune catégorie n’est sans image (fallback si besoin)
@@ -835,6 +837,23 @@
             name: "Chicanos",
             price: "50 DH",
             desc: "Macaroni, jalapeños, tenders, sauce fromage.",
+          },
+        ],
+      },
+      salades: {
+        emoji: "🥗",
+        title: "Salades",
+        subtitle: "Fraiches et gourmandes",
+        items: [
+          {
+            name: "Salade Macaroni",
+            price: "35 DH",
+            desc: "Macaroni, maïs, carottes râpées, chou, jambon fumé, marinade vinaigrette.",
+          },
+          {
+            name: "Salade Chicken",
+            price: "45 DH",
+            desc: "Laitue, tomate, olive, maïs, fromage râpé, poulet croustillant.",
           },
         ],
       },
@@ -960,6 +979,34 @@
           },
         ],
       },
+      kentucky: {
+        emoji: "🍗",
+        title: "Kentucky Style",
+        subtitle: "Drumsticks, tenders et hot wings",
+        streetRows: [
+          {
+            name: "Drumsticks",
+            prices: [
+              { label: "2 pièces", value: "35 DH" },
+              { label: "4 pièces", value: "65 DH" },
+            ],
+          },
+          {
+            name: "Tender",
+            prices: [
+              { label: "4 pièces", value: "40 DH" },
+              { label: "8 pièces", value: "70 DH" },
+            ],
+          },
+          {
+            name: "Hot Wings",
+            prices: [
+              { label: "6 pièces", value: "40 DH" },
+              { label: "12 pièces", value: "70 DH" },
+            ],
+          },
+        ],
+      },
       fingers: {
         emoji: "🧀",
         title: "Bouchées à grignoter",
@@ -992,10 +1039,12 @@
     const categoryList = [
       { id: "burgers", label: "Burgers" },
       { id: "poulet", label: "Sandwichs Poulet" },      { id: "familial", label: "menus familiaux" },      { id: "bowls", label: "Bols & Macaroni au fromage" },
+      { id: "salades", label: "Salades" },
       { id: "poutines", label: "Poutines" },
       { id: "tacos", label: "Tacos" },
       { id: "wraps", label: "Wraps" },
       { id: "kfc", label: "Poulet frit coréen" },
+      { id: "kentucky", label: "Kentucky Style" },
       { id: "fingers", label: "Bouchées à grignoter" },
     ];
 
